@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text Analyzer</title>
+
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1 class="title">Text Analyzer</h1>
+
+            <textarea
+                class="text-input"
+                id="textInput"
+                placeholder="Type text here..."
+            ></textarea>
+
+            <div class="results-block">
+                <p class="results-item">
+                    Letters: <span id="letters" class="quantity">0</span>
+                </p>
+                <p class="results-item">
+                    Words: <span id="words" class="quantity">0</span>
+                </p>
+                <p class="results-item">
+                    Sentences: <span id="sentences" class="quantity">0</span>
+                </p>
+                <p class="results-item">
+                    Characters (with spaces):
+                    <span id="charsWithSpaces" class="quantity">0</span>
+                </p>
+                <p class="results-item">
+                    Characters (without spaces):
+                    <span id="charsWithoutSpaces" class="quantity">0</span>
+                </p>
+            </div>
+
+            <button id="btn" class="btn">Random Background 🎨</button>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
